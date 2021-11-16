@@ -476,9 +476,17 @@ p {
   width: 70px;
   height: 70px;
   font-size: 50px;
+  opacity: 0;
+  pointer-events: none;
   color: var(--color-white);
   background-color: var(--color-pink);
   border-radius: 50%;
+  transition: opacity 300ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
